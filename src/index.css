@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-spotify-black text-spotify-white font-spotify antialiased;
+  }
+}
+
+@layer components {
+  .btn-spotify {
+    @apply bg-spotify-green hover:bg-spotify-hover text-spotify-black font-bold py-3 px-8 rounded-full 
+           transition-all duration-200 transform hover:scale-105 active:scale-95 
+           focus:outline-none focus:ring-2 focus:ring-spotify-green focus:ring-opacity-50;
+  }
+  
+  .btn-spotify-outline {
+    @apply border-2 border-spotify-white hover:border-spotify-hover text-spotify-white hover:text-spotify-hover 
+           font-bold py-3 px-8 rounded-full transition-all duration-200 transform hover:scale-105 
+           active:scale-95 focus:outline-none focus:ring-2 focus:ring-spotify-white focus:ring-opacity-50;
+  }
+  
+  .card-spotify {
+    @apply bg-spotify-darkgray rounded-lg p-6 hover:bg-[#333333] transition-all duration-200
+           shadow-lg hover:shadow-xl border border-[#404040];
+  }
+
+  .progress-bar {
+    @apply w-full h-2 bg-[#404040] rounded-full overflow-hidden;
+  }
+
+  .progress-bar-fill {
+    @apply h-full bg-spotify-green rounded-full transition-all duration-500;
+  }
+
+  .section-title {
+    @apply text-2xl font-bold text-spotify-white mb-6;
+  }
+
+  .subsection-title {
+    @apply text-xl font-semibold text-spotify-white mb-4;
+  }
+
+  .text-label {
+    @apply text-sm font-medium text-spotify-lightgray;
+  }
+
+  .text-value {
+    @apply text-lg font-bold text-spotify-white;
+  }
+}
